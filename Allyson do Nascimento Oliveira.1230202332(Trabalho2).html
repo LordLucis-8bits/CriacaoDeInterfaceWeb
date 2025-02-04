@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+ <head>
+    <meta charset="UTF-8">
+	
+   <title>Formulário de Cadastramento</title>
+   <div style="overflow-x: auto">
+   <style>
+   th {
+  height: 70px;
+  }
+  
+  td {
+  padding: 9px;
+  }
+  </style>
+ </head>
+
+ <body>
+
+    <form id="Cadastro" action="/pagina-processar-dados-do-form" method="post">     
+    <table border="1" align="center"
+
+     <tr>            
+
+            <th colspan="11" align="center">Cadastro de Recrutamento</th>
+
+     </tr>       
+     <tr>
+         
+             
+            <td align="center">Nome Completo</td>
+            <td align="center"><input type="text" size="50" name="nomeCompleto"></td>
+
+            <td align="center" rowspan="2">Data de Nascimento</td>
+            <td align="center" rowspan="2"><input type="date" name="data" min="1954-07-10"
+             max="2017-04-20" value="dd/mm/yyyy"></td>
+			 
+   	 </tr>
+     <tr>
+	   
+            <td align="center">CPF</td>
+            <td align="center"><input type="text" size="50" name="cpf"</td>           
+     </tr> 
+     <tr>
+
+            <td align="center">Sexo</td>
+            <td align="center"colspan="1"><input type="radio" name="sexo" value="f">Feminino</td>         
+            <td align="center" colspan="2"><input type="radio" name="sexo" value="M">Masculino</td> 
+      
+     </tr>
+     <tr>
+
+           <td align="center">RG</td>
+           <td align="center"><input type="text" size="50" name="RG"</td>
+        
+      </tr>      
+      <tr>
+
+            <td align="center">Endereço</td>
+            <td align="left"><input type="text" size="50" name="endereço"</td>
+
+      </tr> 
+      <tr>
+ 
+            <td align="center">Cidade</td>
+            <td align="left"><input type="text" size="50" name="cidade"</td>
+
+            <td align="center">Bairro</td>
+            <td align="center"><input type="text" size="30" name="bairro"</td>
+	  </tr>
+	  <tr>
+            <td align="center">Cep</td>
+            <td align="center"><input type="text" size="50" name="cep"</td>
+
+      </tr>
+      <tr>
+
+            <td align="center">Complemento</td>
+            <td align="center"><input type="text" size="50" name="complemento"</td>
+ 
+      </tr>
+      <tr>
+           
+            <td align="center">Telefone</td>
+            <td align="center"><input type="tel" name="phone"  size="50" placeholder="(DDD)123-45-678"></td>
+	  </tr>
+	  <tr>
+	   
+       <tr rowspan="5">
+       <td align="center">Região</td>
+       <td colspan="1"/td>
+       
+           <select name="região">
+           <option value="opcao1">Norte</option>
+           <option value="opcao2"selected>Sul</option>
+           <option value="opcao3">Leste</option>
+           <option value="opcao4">Sudeste</option> 
+           <option value="opcao5">Nordeste</option>
+           <option value="opcao6">Centro-Oeste</option>
+           </select></td>
+      </tr>
+      <tr>
+
+        <td align="center">Horario disponivel</td>
+          <td align="center">
+
+          <input type="checkbox" name="manhã" value="M">
+           <label for="Manhã">Manhã</label><br>
+
+          <input type="checkbox" name="tarde" value="T">
+           <label for="tarde">Tarde</label><br>
+  
+          <input type="checkbox" name="noite" value="N">
+           <label for="noite">Noite</label><br>         
+     </tr>        
+	 <tr>
+	  
+      <td align="center">Estado Civil</td>
+      <td><select multiple name="Estado Civil">
+	  
+       <option value="1">Solteiro(a)</option>
+       <option value="2">Casado(a)</option>
+       <option value="3">Namorando</option>
+       <option value="4">Divorciado(a)</option>
+      </select></td>
+	   
+     </tr>
+     <tr>
+
+       <td align="center">Selecionar um documento(opcional)</td>
+       <td align="center"><input type="file" name="pasta"</td>
+
+     </tr>
+     <tr>
+ 
+       <td align="center" rowspan="2">Natureza do Cargo</td>
+	   
+          <td align="center">
+          <input type="checkbox" name="gestão" value="G">Gestão</td>
+         
+ 		  <td align="center" colspan="2">
+          <input type="checkbox" name="administração" value="A">Administrativo</td>
+     </tr>
+	 <tr>
+		  
+		  <td align="center">
+          <input type="checkbox" name="financeiro" value="F">Financeiro</td>
+          	  
+		  <td align="center" colspan="2">          
+          <input type="checkbox" name="recepção" value="R">Recepção</td>
+               
+      </tr> 
+      <tr>
+
+          <td align="center">Senha</td>
+          <td align="center"><input type="password" size="50" name="Senha" minlength="8" required/></td>
+		  
+	  </tr>	  
+      <tr>		  
+		  
+          <td align="center">E-mail</td>
+          <td align="center"><input type="email" size="50" name="email"</td>
+    
+     </tr>
+     <tr>
+
+          <td align="center">Comentário</td>		  
+          <td align="center"><textarea name="resumo" rows="5" cols="50" placeholder="Fale sobre você"></textarea>
+		  </td>
+
+     </tr>
+    </form> 
+
+</html>
